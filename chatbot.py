@@ -1,9 +1,10 @@
 import telepot
 from telepot.loop import MessageLoop
+import requests
 
 
 def handle(msg):
-    print(msg)
+    print(msg['text'])
     if 'text' in msg:
         command=msg['text']
         if command=='Hola':
